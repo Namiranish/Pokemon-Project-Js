@@ -14,7 +14,7 @@ pokeData();
 
 async function fetchPokemon(){
     try{
-        for(let i = 2; i <= 1250; i++){
+        for(let i = 2; i <= 500; i++){
             let pokemon = await pokeData(i);
             let card = createCard(pokemon)
             display.appendChild(card);

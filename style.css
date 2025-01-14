@@ -27,7 +27,6 @@ h1 {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
-
 .controls {
     margin: 20px 0;
     display: flex;
@@ -153,4 +152,74 @@ h1 {
     border-radius: 10px;
     padding: 5px 10px;
     font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .controls select,
+    .controls input,
+    .controls button {
+        width: 100%;
+    }
+
+    #pokemon-container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 150px;
+        height: 250px;
+    }
+
+    .image {
+        height: 120px;
+        width: 120px;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .types {
+        font-size: 0.9rem;
+    }
+
+    .ability-box {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 120px;
+        height: 200px;
+    }
+
+    .image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .name {
+        font-size: 0.9rem;
+    }
+
+    .types {
+        font-size: 0.8rem;
+    }
+
+    .ability-box {
+        font-size: 0.7rem;
+        padding: 3px;
+    }
 }
