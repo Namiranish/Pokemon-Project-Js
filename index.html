@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favball.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Pokémon Explorer</h1>
+    <div class="controls">
+        <div class="type">
+            <select name="type" id="type">
+                <option value="normal">Normal</option>
+                <option value="fire">Fire</option>
+                <option value="bug">Bug</option>
+                <option value="grass">Grass</option>
+                <option value="electric">Electric</option>
+                <option value="water">Water</option>
+                <option value="ghost">Ghost</option>
+                <option value="poison">Poison</option>
+                <option value="fairy">Fairy</option>
+                <option value="fighting">Fighting</option>
+                <option value="psychic">Psychic</option>
+                <option value="rock">Rock</option>
+                <option value="dragon">Dragon</option>
+            </select>
+        </div>
+        <button id="filter">Filter by Type</button>
+        <button id="resetBtn"><i class="fa-solid fa-rotate"></i></button>
+        <input type="search" id="searchBar" placeholder="Search Pokémon">
+    </div>
+    <div id="pokemon-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
